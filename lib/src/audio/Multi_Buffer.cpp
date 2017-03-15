@@ -1,6 +1,6 @@
 // Blip_Buffer 0.4.1. http://www.slack.net/~ant/
 
-#include "Multi_Buffer.h"
+#include "../../include/audio/Multi_Buffer.h"
 
 /* Copyright (C) 2003-2007 Shay Green. This module is free software; you
 can redistribute it and/or modify it under the terms of the GNU Lesser
@@ -13,7 +13,7 @@ details. You should have received a copy of the GNU Lesser General Public
 License along with this module; if not, write to the Free Software Foundation,
 Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA */
 
-#include "blargg_source.h"
+#include "../../include/audio/blargg_source.h"
 
 #ifdef BLARGG_ENABLE_OPTIMIZER
 	#include BLARGG_ENABLE_OPTIMIZER

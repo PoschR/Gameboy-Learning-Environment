@@ -9,8 +9,8 @@
       android:installLocation="auto">
 
     <!-- Create a Java class extending SDLActivity and place it in a
-         directory under src matching the package, e.g.
-         	src/com/gamemaker/game/MyGame.java
+         directory unlib src matching the package, e.g.
+      lib	src/com/gamemaker/game/MyGame.java
 
          then replace "SDLActivity" with the name of your class (e.g. "MyGame")
          in the XML below.

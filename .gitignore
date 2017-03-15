@@ -1,3 +1,8 @@
+#CLion files
+.idea
+!CMakeLists.txt
+cmake-build-*
+
 # Netbeans files
 dist/
 build/

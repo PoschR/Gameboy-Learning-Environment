@@ -17,12 +17,12 @@
  * 
  */
 
-#include "RomOnlyMemoryRule.h"
-#include "Video.h"
-#include "Memory.h"
-#include "Processor.h"
-#include "Input.h"
-#include "Cartridge.h"
+#include "../include/RomOnlyMemoryRule.h"
+#include "../include/Video.h"
+#include "../include/Memory.h"
+#include "../include/Processor.h"
+#include "../include/Input.h"
+#include "../include/Cartridge.h"
 
 RomOnlyMemoryRule::RomOnlyMemoryRule(Processor* pProcessor,
         Memory* pMemory, Video* pVideo, Input* pInput,

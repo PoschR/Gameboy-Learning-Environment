@@ -419,7 +419,7 @@ void init_ogl(void)
     alpha.mask = 0;
 
     dispman_element = vc_dispmanx_element_add ( dispman_update, dispman_display,
-        0/*layer*/, &dst_rect, 0/*src*/,
+        0/*layer*/, &dst_rect, 0/*lib*/,
         &src_rect, DISPMANX_PROTECTION_NONE, &alpha, 0/*clamp*/, DISPMANX_NO_ROTATE/*transform*/);
 
     nativewindow.element = dispman_element;

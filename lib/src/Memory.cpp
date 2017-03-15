@@ -19,9 +19,9 @@
 
 #include <iostream>
 #include <fstream>
-#include "Memory.h"
-#include "Processor.h"
-#include "Video.h"
+#include "../include/Memory.h"
+#include "../include/Processor.h"
+#include "../include/Video.h"
 
 Memory::Memory()
 {

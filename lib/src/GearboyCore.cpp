@@ -17,22 +17,22 @@
  * 
  */
 
-#include "GearboyCore.h"
-#include "Memory.h"
-#include "Processor.h"
-#include "Video.h"
-#include "Audio.h"
-#include "Input.h"
-#include "Cartridge.h"
-#include "MemoryRule.h"
-#include "CommonMemoryRule.h"
-#include "IORegistersMemoryRule.h"
-#include "RomOnlyMemoryRule.h"
-#include "MBC1MemoryRule.h"
-#include "MBC2MemoryRule.h"
-#include "MBC3MemoryRule.h"
-#include "MBC5MemoryRule.h"
-#include "MultiMBC1MemoryRule.h"
+#include "../include/GearboyCore.h"
+#include "../include/Memory.h"
+#include "../include/Processor.h"
+#include "../include/Video.h"
+#include "../include/Audio.h"
+#include "../include/Input.h"
+#include "../include/Cartridge.h"
+#include "../include/MemoryRule.h"
+#include "../include/CommonMemoryRule.h"
+#include "../include/IORegistersMemoryRule.h"
+#include "../include/RomOnlyMemoryRule.h"
+#include "../include/MBC1MemoryRule.h"
+#include "../include/MBC2MemoryRule.h"
+#include "../include/MBC3MemoryRule.h"
+#include "../include/MBC5MemoryRule.h"
+#include "../include/MultiMBC1MemoryRule.h"
 
 GearboyCore::GearboyCore()
 {

@@ -1,6 +1,6 @@
 // Gb_Snd_Emu $vers. http://www.slack.net/~ant/
 
-#include "Gb_Apu.h"
+#include "../../include/audio/Gb_Apu.h"
 
 #include <string.h>
 
@@ -15,7 +15,7 @@ details. You should have received a copy of the GNU Lesser General Public
 License along with this module; if not, write to the Free Software Foundation,
 Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA */
 
-#include "blargg_source.h"
+#include "../../include/audio/blargg_source.h"
 
 #if GB_APU_CUSTOM_STATE
 	#define REFLECT( x, y ) (save ?       (io->y) = (x) :         (x) = (io->y)          )

@@ -1,6 +1,6 @@
 // Game_Music_Emu $vers. http://www.slack.net/~ant/
 
-#include "Effects_Buffer.h"
+#include "../../include/audio/Effects_Buffer.h"
 
 #include <string.h>
 
@@ -15,7 +15,7 @@ details. You should have received a copy of the GNU Lesser General Public
 License along with this module; if not, write to the Free Software Foundation,
 Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA */
 
-#include "blargg_source.h"
+#include "../../include/audio/blargg_source.h"
 
 int const fixed_shift = 12;
 #define TO_FIXED( f )   fixed_t ((f) * ((fixed_t) 1 << fixed_shift))

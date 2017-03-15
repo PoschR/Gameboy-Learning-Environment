@@ -182,9 +182,9 @@ do
       mkdircmd=$mkdirprog
     fi
   else
-    # Waiting for this to be detected by the "$cpprog $src $dsttmp" command
+    # Waiting for this to be detected by the "$cpprog $lib $dsttmp" command
     # might cause directories to be created, which would be especially bad
-    # if $src (and thus $dsttmp) contains '*'.
+    # if $lib (and thus $dsttmp) contains '*'.
     if test ! -f "$src" && test ! -d "$src"; then
       echo "$0: $src does not exist." >&2
       exit 1
@@ -271,7 +271,7 @@ do
     #
     # If any of these fail, we abort the whole thing.  If we want to
     # ignore errors from any of these, just make sure not to ignore
-    # errors from the above "$doit $cpprog $src $dsttmp" command.
+    # errors from the above "$doit $cpprog $lib $dsttmp" command.
     #
     { test -z "$chowncmd" || $doit $chowncmd "$dsttmp"; } \
       && { test -z "$chgrpcmd" || $doit $chgrpcmd "$dsttmp"; } \

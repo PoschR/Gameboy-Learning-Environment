@@ -17,7 +17,7 @@
  * 
  */
 
-#include "Processor.h"
+#include "../include/Processor.h"
 
 void Processor::OPCodeCB0x00()
 {

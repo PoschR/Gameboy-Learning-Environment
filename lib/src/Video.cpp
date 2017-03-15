@@ -17,9 +17,9 @@
  * 
  */
 
-#include "Video.h"
-#include "Memory.h"
-#include "Processor.h"
+#include "../include/Video.h"
+#include "../include/Memory.h"
+#include "../include/Processor.h"
 
 Video::Video(Memory* pMemory, Processor* pProcessor)
 {

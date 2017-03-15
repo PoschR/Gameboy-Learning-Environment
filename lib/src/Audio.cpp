@@ -17,8 +17,8 @@
  *
  */
 
-#include "Audio.h"
-#include "Memory.h"
+#include "../include/Audio.h"
+#include "../include/Memory.h"
 
 Audio::Audio()
 {

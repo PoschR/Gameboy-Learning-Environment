@@ -17,12 +17,12 @@
  * 
  */
 
-#include "MBC1MemoryRule.h"
-#include "Video.h"
-#include "Memory.h"
-#include "Processor.h"
-#include "Input.h"
-#include "Cartridge.h"
+#include "../include/MBC1MemoryRule.h"
+#include "../include/Video.h"
+#include "../include/Memory.h"
+#include "../include/Processor.h"
+#include "../include/Input.h"
+#include "../include/Cartridge.h"
 
 const int kMBC1RamBanksSize = 0x8000;
 

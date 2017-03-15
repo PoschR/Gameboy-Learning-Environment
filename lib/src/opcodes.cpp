@@ -17,9 +17,9 @@
  * 
  */
 
-#include "Processor.h"
-#include "Memory.h"
-#include "opcode_timing.h"
+#include "../include/Processor.h"
+#include "../include/Memory.h"
+#include "../include/opcode_timing.h"
 
 void Processor::OPCode0x00()
 {

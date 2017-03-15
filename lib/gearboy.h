@@ -20,16 +20,16 @@
 #ifndef GEARBOY_H
 #define	GEARBOY_H
 
-#include "definitions.h"
-#include "GearboyCore.h"
-#include "Memory.h"
-#include "Processor.h"
-#include "Cartridge.h"
-#include "Audio.h" 
-#include "Video.h" 
-#include "SixteenBitRegister.h" 
-#include "EightBitRegister.h" 
-#include "MemoryRule.h"  
+#include "include/definitions.h"
+#include "include/GearboyCore.h"
+#include "include/Memory.h"
+#include "include/Processor.h"
+#include "include/Cartridge.h"
+#include "include/Audio.h"
+#include "include/Video.h"
+#include "include/SixteenBitRegister.h"
+#include "include/EightBitRegister.h"
+#include "include/MemoryRule.h"
 
 #endif	/* GEARBOY_H */
 

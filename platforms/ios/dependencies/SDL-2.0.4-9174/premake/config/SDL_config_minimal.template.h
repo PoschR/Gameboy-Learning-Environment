@@ -54,25 +54,25 @@ typedef unsigned long uintptr_t;
 #define HAVE_GCC_SYNC_LOCK_TEST_AND_SET 1
 #endif
 
-/* Enable the dummy audio driver (src/audio/dummy/\*.c) */
+/* Enable the dummy audio driver (lib/audio/dummy/\*.c) */
 #define SDL_AUDIO_DRIVER_DUMMY  1
 
-/* Enable the stub joystick driver (src/joystick/dummy/\*.c) */
+/* Enable the stub joystick driver (lib/joystick/dummy/\*.c) */
 #define SDL_JOYSTICK_DISABLED   1
 
-/* Enable the stub haptic driver (src/haptic/dummy/\*.c) */
+/* Enable the stub haptic driver (lib/haptic/dummy/\*.c) */
 #define SDL_HAPTIC_DISABLED 1
 
-/* Enable the stub shared object loader (src/loadso/dummy/\*.c) */
+/* Enable the stub shared object loader (lib/loadso/dummy/\*.c) */
 #define SDL_LOADSO_DISABLED 1
 
-/* Enable the stub thread support (src/thread/generic/\*.c) */
+/* Enable the stub thread support (lib/thread/generic/\*.c) */
 #define SDL_THREADS_DISABLED    1
 
-/* Enable the stub timer support (src/timer/dummy/\*.c) */
+/* Enable the stub timer support (lib/timer/dummy/\*.c) */
 #define SDL_TIMERS_DISABLED 1
 
-/* Enable the dummy video driver (src/video/dummy/\*.c) */
+/* Enable the dummy video driver (lib/video/dummy/\*.c) */
 #define SDL_VIDEO_DRIVER_DUMMY  1
 
 #endif /* _SDL_config_minimal_h */

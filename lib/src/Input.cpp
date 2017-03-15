@@ -17,9 +17,9 @@
  * 
  */
 
-#include "Input.h"
-#include "Memory.h"
-#include "Processor.h"
+#include "../include/Input.h"
+#include "../include/Memory.h"
+#include "../include/Processor.h"
 
 Input::Input(Memory* pMemory, Processor* pProcessor)
 {

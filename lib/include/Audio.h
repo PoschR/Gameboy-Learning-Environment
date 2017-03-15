@@ -21,9 +21,9 @@
 #define	AUDIO_H
 
 #include "definitions.h"
-#include "audio/Multi_Buffer.h"
-#include "audio/Gb_Apu.h"
-#include "audio/Sound_Queue.h"
+#include "../include/audio/Multi_Buffer.h"
+#include "../include/audio/Gb_Apu.h"
+#include "../include/audio/Sound_Queue.h"
 
 class Audio
 {

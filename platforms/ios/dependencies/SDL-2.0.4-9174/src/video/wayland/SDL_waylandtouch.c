@@ -36,7 +36,7 @@ struct SDL_WaylandTouch {
 
 /**
  * Qt TouchPointState
- * adapted from qtbase/src/corelib/global/qnamespace.h
+ * adapted from qtbase/lib/corelib/global/qnamespace.h
  **/
 enum QtWaylandTouchPointState {
     QtWaylandTouchPointPressed    = 0x01,
@@ -68,7 +68,7 @@ touch_handle_touch(void *data,
 {
     /**
      * Event is assembled in QtWayland in TouchExtensionGlobal::postTouchEvent
-     * (src/compositor/wayland_wrapper/qwltouch.cpp)
+     * (lib/compositor/wayland_wrapper/qwltouch.cpp)
      **/
 
     float FIXED_TO_FLOAT = 1. / 10000.;

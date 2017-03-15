@@ -511,9 +511,9 @@ SDL_LowerBlit(SDL_Surface * src, SDL_Rect * srcrect,
         }
         /* just here for debugging */
 /*         printf */
-/*             ("src = 0x%08X src->flags = %08X src->map->info.flags = %08x\ndst = 0x%08X dst->flags = %08X dst->map->info.flags = %08X\nsrc->map->blit = 0x%08x\n", */
-/*              src, dst->flags, src->map->info.flags, dst, dst->flags, */
-/*              dst->map->info.flags, src->map->blit); */
+/*             ("lib = 0x%08X lib->flags = %08X lib->map->info.flags = %08x\ndst = 0x%08X dst->flags = %08X dst->map->info.flags = %08X\nlib->map->blit = 0x%08x\n", */
+/*              lib, dst->flags, lib->map->info.flags, dst, dst->flags, */
+/*              dst->map->info.flags, lib->map->blit); */
     }
     return (src->map->blit(src, srcrect, dst, dstrect));
 }

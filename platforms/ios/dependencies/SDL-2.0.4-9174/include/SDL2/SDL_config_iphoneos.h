@@ -109,17 +109,17 @@
 
 /* enable iPhone version of Core Audio driver */
 #define SDL_AUDIO_DRIVER_COREAUDIO 1
-/* Enable the dummy audio driver (src/audio/dummy/\*.c) */
+/* Enable the dummy audio driver (lib/audio/dummy/\*.c) */
 #define SDL_AUDIO_DRIVER_DUMMY  1
 
-/* Enable the stub haptic driver (src/haptic/dummy/\*.c) */
+/* Enable the stub haptic driver (lib/haptic/dummy/\*.c) */
 #define SDL_HAPTIC_DUMMY 1
 
 /* Enable Unix style SO loading */
 /* Technically this works, but it violates the iPhone developer agreement */
 /* #define SDL_LOADSO_DLOPEN 1 */
 
-/* Enable the stub shared object loader (src/loadso/dummy/\*.c) */
+/* Enable the stub shared object loader (lib/loadso/dummy/\*.c) */
 #define SDL_LOADSO_DISABLED 1
 
 /* Enable various threading systems */
@@ -149,7 +149,7 @@
 #define SDL_JOYSTICK_DISABLED 0
 
 /* Set max recognized G-force from accelerometer
-   See src/joystick/uikit/SDL_sysjoystick.m for notes on why this is needed
+   See lib/joystick/uikit/SDL_sysjoystick.m for notes on why this is needed
  */
 #define SDL_IPHONE_MAX_GFORCE 5.0
 

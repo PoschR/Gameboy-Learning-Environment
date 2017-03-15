@@ -17,38 +17,25 @@
  * 
  */
 
-#include "MemoryRule.h"
+#include "../include/IORegistersMemoryRule.h"
 
-MemoryRule::MemoryRule(Processor* pProcessor, Memory* pMemory,
-        Video* pVideo, Input* pInput, Cartridge* pCartridge, Audio* pAudio)
+IORegistersMemoryRule::IORegistersMemoryRule(Processor* pProcessor,
+        Memory* pMemory, Video* pVideo, Input* pInput, Audio* pAudio)
 {
     m_pProcessor = pProcessor;
     m_pMemory = pMemory;
     m_pVideo = pVideo;
     m_pInput = pInput;
-    m_pCartridge = pCartridge;
     m_pAudio = pAudio;
     m_bCGB = false;
-    InitPointer(m_pRamChangedCallback);
 }
 
-MemoryRule::~MemoryRule()
+IORegistersMemoryRule::~IORegistersMemoryRule()
 {
-
 }
 
-void MemoryRule::SaveRam(std::ofstream&)
+void IORegistersMemoryRule::Reset(bool bCGB)
 {
-    Log("Save RAM not implemented");
+    m_bCGB = bCGB;
 }
 
-bool MemoryRule::LoadRam(std::ifstream&, s32)
-{
-    Log("Load RAM not implemented");
-    return false;
-}
-
-void MemoryRule::SetRamChangedCallback(RamChangedCallback callback)
-{
-    m_pRamChangedCallback = callback;
-}

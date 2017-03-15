@@ -1,6 +1,6 @@
 // Blip_Buffer 0.4.1. http://www.slack.net/~ant/
 
-#include "Blip_Buffer.h"
+#include "../../include/audio/Blip_Buffer.h"
 
 #include <assert.h>
 #include <limits.h>

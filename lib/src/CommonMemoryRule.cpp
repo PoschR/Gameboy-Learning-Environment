@@ -17,7 +17,7 @@
  * 
  */
 
-#include "CommonMemoryRule.h"
+#include "../include/CommonMemoryRule.h"
 
 CommonMemoryRule::CommonMemoryRule(Memory* pMemory)
 {

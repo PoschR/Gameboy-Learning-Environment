@@ -71,7 +71,7 @@ This is a simple but effective workaround for observed issues.
 These rows allocate extra memory and are then hidden from the surface.
 Rows are added to the end of destination surfaces when they are allocated.
 This catches any potential overflows which seem to happen with
-just the right src image dimensions and scale/rotation and can lead
+just the right lib image dimensions and scale/rotation and can lead
 to a situation where the program can segfault.
 */
 #define GUARD_ROWS (2)
@@ -139,13 +139,13 @@ SDLgfx_rotozoomSurfaceSizeTrig(int width, int height, double angle,
 /* !
 \brief Internal 32 bit rotozoomer with optional anti-aliasing.
 
-Rotates and zooms 32 bit RGBA/ABGR 'src' surface to 'dst' surface based on the control
+Rotates and zooms 32 bit RGBA/ABGR 'lib' surface to 'dst' surface based on the control
 parameters by scanning the destination surface and applying optionally anti-aliasing
 by bilinear interpolation.
-Assumes src and dst surfaces are of 32 bit depth.
+Assumes lib and dst surfaces are of 32 bit depth.
 Assumes dst surface was allocated with the correct dimensions.
 
-\param src Source surface.
+\param lib Source surface.
 \param dst Destination surface.
 \param cx Horizontal center coordinate.
 \param cy Vertical center coordinate.
@@ -257,14 +257,14 @@ _transformSurfaceRGBA(SDL_Surface * src, SDL_Surface * dst, int cx, int cy, int 
 
 /* !
 
-\brief Rotates and zooms 8 bit palette/Y 'src' surface to 'dst' surface without smoothing.
+\brief Rotates and zooms 8 bit palette/Y 'lib' surface to 'dst' surface without smoothing.
 
-Rotates and zooms 8 bit RGBA/ABGR 'src' surface to 'dst' surface based on the control
+Rotates and zooms 8 bit RGBA/ABGR 'lib' surface to 'dst' surface based on the control
 parameters by scanning the destination surface.
-Assumes src and dst surfaces are of 8 bit depth.
+Assumes lib and dst surfaces are of 8 bit depth.
 Assumes dst surface was allocated with the correct dimensions.
 
-\param src Source surface.
+\param lib Source surface.
 \param dst Destination surface.
 \param cx Horizontal center coordinate.
 \param cy Vertical center coordinate.
@@ -322,12 +322,12 @@ transformSurfaceY(SDL_Surface * src, SDL_Surface * dst, int cx, int cy, int isin
 /* !
 \brief Rotates and zooms a surface with different horizontal and vertival scaling factors and optional anti-aliasing.
 
-Rotates a 32bit or 8bit 'src' surface to newly created 'dst' surface.
+Rotates a 32bit or 8bit 'lib' surface to newly created 'dst' surface.
 'angle' is the rotation in degrees, 'centerx' and 'centery' the rotation center. If 'smooth' is set
 then the destination 32bit surface is anti-aliased. If the surface is not 8bit
 or 32bit RGBA/ABGR it will be converted into a 32bit RGBA format on the fly.
 
-\param src The surface to rotozoom.
+\param lib The surface to rotozoom.
 \param angle The angle to rotate in degrees.
 \param centerx The horizontal coordinate of the center of rotation
 \param zoomy The vertical coordinate of the center of rotation

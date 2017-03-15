@@ -19,8 +19,8 @@
 
 #include <string>
 #include <algorithm>
-#include "Cartridge.h"
-#include "miniz/miniz.c"
+#include "../include/Cartridge.h"
+#include "../include/miniz/miniz.c"
 
 Cartridge::Cartridge()
 {
