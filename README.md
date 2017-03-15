@@ -1,3 +1,5 @@
+Modified Gearboy framework for deep Q-learning (Inspired by ALE).
+
 Gearboy
 =======
 <b>Copyright &copy; 2012 by Ignacio Sanchez</b>
